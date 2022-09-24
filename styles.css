@@ -1,28 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Indie Flower', cursive;
-    background-image: url(img/wallpaper2you_419835.jpeg);
-    background-position: 50% 10%;
-    background-repeat: no-repeat;
-    color: black;
-    }
-
-#container{
-    width: calc(100% - 180px);
-    margin-left: auto;
-    display: flex;
-    /* flex-direction: column; */
-    height: 100vh;
-    /* justify-content: flex-start; */
+body {
+  font-family: 'Indie Flower', cursive;
+  background-image: url(img/wallpaper2you_419835.jpeg);
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  color: black;
 }
 
-.flexbox-menu{
-  align-items: stretch; 
+#container {
+  width: calc(100% - 180px);
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* flex-direction: column; */
+  height: 100vh;
+  /* justify-content: flex-start; */
+}
+
+.flexbox-menu {
+  align-items: stretch;
   /* align-items: stretch; 
   flex-direction: column; */
   /* display: flex;
@@ -32,124 +34,121 @@ body{
   /* flex-shrink: 0; */
 }
 
- 
+
 .header {
   font-size: 30px;
   /* flex-wrap: wrap; */
-  /* align-items: center; */
-  justify-content: center;
-  background-color: yellow;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: yellow; */
+  border: 1px solid blue;
   /* display: flex; */
 }
 
-    .rainbow {
-        background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-        background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-        color:transparent;
-        text-align: center;
-        -webkit-background-clip: text;
-        background-clip: text;
-        animation: animatedBackground 5s linear infinite;
-        -moz-animation: animatedBackground 5s linear infinite;
-        -webkit-animation: animatedBackground 5s linear infinite;
-        -ms-animation: animatedBackground 5s linear infinite;
-        -o-animation: animatedBackground 5s linear infinite;
-      }
 
-      #main{
-        padding: 1px 16px;
-        height: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-        /* flex-direction: column; */
-      }
+.rainbow {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+  background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+  color: transparent;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animatedBackground 5s linear infinite;
+  -moz-animation: animatedBackground 5s linear infinite;
+  -webkit-animation: animatedBackground 5s linear infinite;
+  -ms-animation: animatedBackground 5s linear infinite;
+  -o-animation: animatedBackground 5s linear infinite;
+}
 
-      ul {
-        /* list-style-type: none; */
-        /* margin: 0; */
-        margin-right: 15px;
-        padding: 0;
-        width: 180px;
-        /* min-width: 50px; */
-        /* background-color: #f1f1f1; */
-        background-color: #b569b8;
-        position: fixed;
-        left: 0;
-        height: 100%;
-        overflow: auto;
-        /* flex-shrink: 0; */
-      }
+main {
+  padding: 1px 16px;
+  /* height: 1000px; */
+  /* height: fit-content; */
+  /* height: min-content; */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f2;
+  /* flex-direction: column; */
+}
 
-      li a {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-        font-size: 22px;
-        /* transition: font-size 0.3s ease;  */
-      }      
-   
-    
-    .active-hover:hover{
-      background-color: #7b0e8c;
-      color: white;
-    }
+ul {
+  /* list-style-type: none; */
+  /* margin: 0; */
+  margin-right: 15px;
+  padding: 0;
+  width: 180px;
+  /* min-width: 50px; */
+  /* background-color: #f1f1f1; */
+  /* background-color: #b569b8; */
+  border: 1px solid red;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  overflow: auto;
+  /* flex-shrink: 0; */
+}
 
-     
-      /* .vertical-menu a {
-        background-color: #eee;
-        color: black;
-        display: block;
-        padding: 20px;
-        text-decoration: none;
-      } */
-      
-      /* .vertical-menu a:hover {
-        background-color: #ccc;
-      }
-      
-      .vertical-menu a.active {
-        background-color: #d280e4;
-        color: white;
-      }  */
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  /* transition: font-size 0.3s ease;  */
+}
 
-      .highlight{
-        display: inline-block;
-        padding: .25em 0;
-        background: rgb(177, 133, 147, 0.3);
-    }
-    
-    .glow {
-        font-size: 80px;
-        /* color: #fff; */
-        text-align: center;
-        animation: glow 0.5s ease-in-out infinite alternate;
-        font-family: cursive;
-        margin-top: 250px;
-      }
-      
-      @keyframes glow {
-        from {
-          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-        }
-        
-        to {
-          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-        }
-      }
+.active-hover:hover {
+  background-color: #7b0e8c;
+  color: white;
+}
 
-.facts{
+.highlight {
+  display: inline-block;
+  padding: .25em 0;
+  background: rgb(177, 133, 147, 0.3);
+}
+
+.main-content{
+  display: inline-block;
+  margin-bottom: auto;
+}
+
+.glow {
+  font-size: 80px;
+  /* color: #fff; */
+  text-align: center;
+  animation: glow 0.5s ease-in-out infinite alternate;
+  font-family: cursive;
+}
+
+.gif{
+  text-align: center;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.facts {
   text-align: center;
   margin-top: 200px;
   background-color: #dcc3dd;
   display: flex;
 }
-
-.gif, .video, .audio{
+/* 
+.gif,
+.video,
+.audio {
   text-align: center;
-}
+} */
 
-.actors{
+.actors {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -163,52 +162,35 @@ body{
 }
 
 .actors img {
-    width: 100%;
-    /* max-width: 350px; */
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 50%;
-    opacity: 0.8;
-  }
+  width: 100%;
+  /* max-width: 350px; */
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.8;
+}
 
-  .actors img:hover{
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    transition: 1s ease;
-    opacity: 1;
-  }
-   
-  /* .actors::after {
+.actors img:hover {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  transition: 1s ease;
+  opacity: 1;
+}
+
+/* .actors::after {
     content: "";
     width: 350px;
   }
       */
 
 
- 
-.footer{
-  text-align: center;
-  /* color: black; */
-  font-size: 20px;
-  font-weight: bold;
-  /* position: relative; */
-  /* position: sticky; */
-  position: fixed;
-  bottom: 0;
+.footer {
+  margin-top: auto;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  /* height: 2.5rem;  */
-
-  padding: 1rem;
-  background-color: #944696;
-  color: #fff;
-  /* font-size: 0.75rem;
-  text-align: center; */
-}     
-
+  background-color: #22f;
+}
 
 @media screen and (max-width: 500px) {
   #container {
