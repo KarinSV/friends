@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Indie Flower', cursive;
-  background-image: url(img/wallpaper2you_419835.jpeg);
+  /* background-image: url(img/wallpaper2you_419835.jpeg); */
   background-position: 50% 10%;
   background-repeat: no-repeat;
   color: black;
@@ -17,14 +17,52 @@ body {
   height: 100vh;
 }
 
-.header {
+/* .header {
   font-size: 30px;
   flex-wrap: wrap;
   align-items: center;
-  /* justify-content: center; */
-  /* background-color: yellow; */
+ 
   border: 1px solid blue;
-  /* display: flex; */
+ 
+} */
+
+header{
+  background-image: url(img/wallpaper2you_419835.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: contain;
+  border: 2px solid red;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+}
+
+.header-logo{
+  width: 480px;
+  max-width: 85%;
+  margin: 4rem 0 2rem 0;
+}
+
+.header-container p{
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  width: 490px;
+  max-width: 85%;
+  margin: 0 0 1rem 0;
+}
+
+.img-logo{
+  object-fit: cover;
+  width: 100%;
 }
 
 
@@ -46,9 +84,41 @@ main {
   padding: 1px 16px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid red;
+  border: 1px solid black;
   flex-wrap: wrap;
 }
+
+.spots-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.name-season-img{
+  padding: 5px;
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+}
+
+.name-season-img:hover {
+  transition: 2s ease;
+  
+}
+
+
+/* .name-season{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}  */
 
 
 .top-menu {
@@ -108,8 +178,6 @@ main {
 }
 
 .active-hover:hover {
-  /* background-color: #7b0e8c;
-  color: white; */
   transition: 2s ease;
   font-size: 30px;
   font-weight: bolder;
