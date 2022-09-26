@@ -13,8 +13,9 @@ body {
 }
 
 #container {
-  margin: 20px 100px;
-  height: 100vh;
+  margin: 20px 50px;
+  /* height: 100vh; */
+  /* position: relative; */
 }
 
 /* .header {
@@ -66,6 +67,18 @@ header{
 }
 
 
+.name-season-episode{
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.watch-item{
+  font-size: 30px;
+  color: orangered;
+  text-decoration: none;
+}
+
 .rainbow {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
   background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
@@ -105,7 +118,8 @@ main {
 
 .name-season-img:hover {
   transition: 2s ease;
-  
+  height: 230px;
+  width:280px ;
 }
 
 
@@ -139,13 +153,6 @@ main {
   float: right;
 }
 
-.main-menu{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-
-}
 
 .main-menu li{
   display: inline-block;
@@ -263,9 +270,12 @@ main {
   box-shadow: 3px 0 7px rgba(0,0,0,.3);
   display: block;
   text-align: center;
+  bottom: 0;
+  /* position: absolute; */
+  height: 2.5rem;  
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   #container {
     width: 100%;
   }
@@ -273,4 +283,4 @@ main {
   ul {
     position: static;
   }
-}
+} */
