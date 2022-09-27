@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Indie Flower', cursive;
-  /* background-image: url(img/wallpaper2you_419835.jpeg); */
   background-position: 50% 10%;
   background-repeat: no-repeat;
   color: black;
@@ -14,24 +13,68 @@ body {
 
 #container {
   margin: 20px 50px;
-  /* height: 100vh; */
-  /* position: relative; */
 }
 
-/* .header {
+/* Menu */
+
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 0 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.main-menu li{
+  display: inline-block;
+}
+
+.main-menu a{
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 22px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  float: none;
+  padding-top: 20px;
+}
+
+.main-menu a:before{
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+
+.active-hover:hover {
+  transition: 2s ease;
   font-size: 30px;
-  flex-wrap: wrap;
-  align-items: center;
- 
-  border: 1px solid blue;
- 
-} */
+  font-weight: bolder;
+}
+
+/* Header */
 
 header{
   background-image: url(img/wallpaper2you_419835.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
   background-size: contain;
   border: 2px solid red;
 }
@@ -66,32 +109,7 @@ header{
   width: 100%;
 }
 
-
-.name-season-episode{
-  font-size: 30px;
-  font-weight: bolder;
-  text-align: center;
-}
-
-.watch-item{
-  font-size: 30px;
-  color: orangered;
-  text-decoration: none;
-}
-
-.rainbow {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-  background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-  color: transparent;
-  text-align: center;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: animatedBackground 5s linear infinite;
-  -moz-animation: animatedBackground 5s linear infinite;
-  -webkit-animation: animatedBackground 5s linear infinite;
-  -ms-animation: animatedBackground 5s linear infinite;
-  -o-animation: animatedBackground 5s linear infinite;
-}
+/* Main container  */
 
 main {
   padding: 1px 16px;
@@ -118,119 +136,65 @@ main {
 
 .name-season-img:hover {
   transition: 2s ease;
-  height: 230px;
-  width:280px ;
+  scale: 1.2;
+  /* height: 230px;
+  width:280px ; */
 }
 
+/* Footer */
 
-/* .name-season{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}  */
-
-
-.top-menu {
+.footer {
+  margin-top: auto;
+  width: 100%;
   background: rgba(255,255,255,.5);
   box-shadow: 3px 0 7px rgba(0,0,0,.3);
-  padding: 0 20px;
-}
-.top-menu:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.main-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-}
-
-
-.main-menu li{
-  display: inline-block;
-}
-
-.main-menu a{
-  text-decoration: none;
   display: block;
-  position: relative;
-  line-height: 61px;
-  padding-left: 20px;
-  font-size: 22px;
-  color: black;
-  letter-spacing: 2px;
-  font-weight: bold;
-  /* transition:.3s linear; */
-  float: none;
-  padding-top: 20px;
+  text-align: center;
+  bottom: 0;
+  height: 2.5rem;  
 }
 
-.main-menu a:before{
-  content: "";
-  width: 9px;
-  height: 9px;
-  position: absolute;
-  left: 50%;
-  transform: rotate(45deg) translateX(6.5px);
-  opacity: 0;
-  transition: .3s linear;
-}
+/* Season 1 page main container */
 
-.active-hover:hover {
-  transition: 2s ease;
+.name-season-episode{
   font-size: 30px;
   font-weight: bolder;
-}
-
-
-
-.highlight {
-  display: inline-block;
-  padding: .25em 0;
-  background: rgb(177, 133, 147, 0.3);
-}
-
-.main-content{
-  display: inline-block;
-  margin-bottom: auto;
-}
-
-.glow {
-  font-size: 80px;
-  /* color: #fff; */
-  text-align: center;
-  animation: glow 0.5s ease-in-out infinite alternate;
-  font-family: cursive;
-}
-
-.gif{
   text-align: center;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-
-.facts {
-  text-align: center;
-  margin-top: 200px;
-  background-color: #dcc3dd;
+.episode{
+  padding: 5px;
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  margin: 20px auto;
+  font-size: 20px;
+  font-weight: bolder;
   display: flex;
 }
+
+.episode-item{
+  display: flex
+}
+
+.watch-item{
+  font-size: 30px;
+  display: flex;
+  /* justify-content: right; */
+  justify-content: end;
+  border: 2px solid red;
+  width: fit-content;
+}
+
+.watch-link:hover{
+  color:blue;
+  transition: 1s ease;
+}
+
+.watch-link{
+  text-decoration: none;
+  color: orangered;
+}
+
+/* Actors page main container */
 
 .actors {
   display: flex;
@@ -247,7 +211,6 @@ main {
 
 .actors img {
   width: 100%;
-  /* max-width: 350px; */
   width: 320px;
   height: 320px;
   object-fit: cover;
@@ -263,17 +226,7 @@ main {
   opacity: 1;
 }
 
-.footer {
-  margin-top: auto;
-  width: 100%;
-  background: rgba(255,255,255,.5);
-  box-shadow: 3px 0 7px rgba(0,0,0,.3);
-  display: block;
-  text-align: center;
-  bottom: 0;
-  /* position: absolute; */
-  height: 2.5rem;  
-}
+
 
 /* @media screen and (max-width: 500px) {
   #container {
