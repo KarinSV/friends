@@ -12,7 +12,8 @@ body {
 }
 
 #container {
-  margin: 20px 50px;
+  margin: 20px;
+  /* margin: 20px 50px; */
 }
 
 /* Menu */
@@ -136,7 +137,7 @@ main {
 
 .name-season-img:hover {
   transition: 2s ease;
-  scale: 1.2;
+  scale: 1.1;
   /* height: 230px;
   width:280px ; */
 }
@@ -168,44 +169,37 @@ main {
   margin: 20px auto;
   font-size: 20px;
   font-weight: bolder;
-  display: flex;
-}
-
-.episode-item{
-  display: flex
-}
-
-.watch-item{
-  font-size: 30px;
-  display: flex;
-  /* justify-content: right; */
-  justify-content: end;
-  border: 2px solid red;
-  width: fit-content;
-}
-
-.watch-link:hover{
-  color:blue;
-  transition: 1s ease;
-}
-
-.watch-link{
+  /* display: flex; */
   text-decoration: none;
-  color: orangered;
+}
+
+.episode:hover{
+  transition: 1s ease;
+  background-color: lavender;
+}
+
+.episode-link{
+  text-decoration: none;
+  color: black;
+}
+
+.episode-describe{
+  font-size: 27px;
+  text-decoration: underline;
 }
 
 /* Actors page main container */
-
 .actors {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   gap: 16px;
   max-width: 1400px;
   padding: 20px 10px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bolder;
   text-align: center;
 }
 
@@ -219,10 +213,11 @@ main {
 }
 
 .actors img:hover {
-  width: 400px;
+  /* width: 400px;
   height: 400px;
-  border-radius: 50%;
-  transition: 1s ease;
+  border-radius: 50%; */
+  scale: 1.1;
+  transition: 2s ease;
   opacity: 1;
 }
 
