@@ -6,8 +6,6 @@
 
 body {
   font-family: 'Indie Flower', cursive;
-  background-position: 50% 10%;
-  background-repeat: no-repeat;
   color: black;
 }
 
@@ -31,7 +29,6 @@ body {
 .main-menu {
   list-style: none;
   margin: 0;
-  padding: 0;
   float: right;
 }
 
@@ -53,21 +50,17 @@ body {
   padding-top: 20px;
 }
 
-.main-menu a:before{
-  content: "";
-  width: 9px;
-  height: 9px;
-  position: absolute;
-  left: 50%;
-  transform: rotate(45deg) translateX(6.5px);
-  opacity: 0;
-  transition: .3s linear;
-}
-
 .active-hover:hover {
   transition: 2s ease;
-  font-size: 30px;
   font-weight: bolder;
+  scale: 1.2;
+}
+
+@media screen and (max-width: 600px) {
+  .top-menu, .main-menu{
+    flex-direction: column;
+    display: flex;
+  }
 }
 
 /* Header */
