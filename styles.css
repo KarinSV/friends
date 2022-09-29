@@ -66,6 +66,7 @@ body {
   .top-menu, .main-menu{
     flex-direction: column;
     display: flex;
+    align-items: center;
   }
 }
 
