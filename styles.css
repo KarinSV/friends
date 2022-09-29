@@ -178,8 +178,9 @@ main {
   font-size: 20px;
 }
 
-.iframe{
-  float: left;
+.video-container{
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 /* Season 1 page main container */
@@ -200,7 +201,6 @@ main {
   margin: 20px auto;
   font-size: 20px;
   font-weight: bolder;
-  /* display: flex; */
   text-decoration: none;
 }
 
@@ -241,14 +241,13 @@ main {
   object-fit: cover;
   border-radius: 50%;
   opacity: 0.8;
+  transition: 500ms ease;
+  filter: grayscale(100%);
 }
 
 .actors img:hover {
-  /* width: 400px;
-  height: 400px;
-  border-radius: 50%; */
   scale: 1.1;
-  transition: 2s ease;
+  filter: grayscale(0%);
   opacity: 1;
 }
 
