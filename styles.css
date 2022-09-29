@@ -251,14 +251,13 @@ main {
   opacity: 1;
 }
 
+/* Contact page main container */
 
+.items-center{
+  display: flex;
+  justify-content: center;
+}
 
-/* @media screen and (max-width: 500px) {
-  #container {
-    width: 100%;
-  }
-
-  ul {
-    position: static;
-  }
-} */
+.text-center{
+  text-align: center;
+}
