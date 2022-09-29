@@ -163,9 +163,17 @@ main {
   font-weight: bolder;
 }
 
+.list-characters{
+  list-style: none;
+}
+
 .about-name{
   color: red;
   font-weight: bolder;
+  font-size: 20px;
+}
+
+.list-characters-item{
   font-size: 20px;
 }
 
