@@ -258,6 +258,34 @@ main {
   justify-content: center;
 }
 
+.bcg-item{
+  background-color: lavender;
+  width: fit-content;
+  filter: grayscale(50%);
+}
+
 .text-center{
   text-align: center;
+}
+
+.placeholder-gray-300{
+  flex-direction: column;
+  display: flex;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  font-size: 20px;
+  background-color: rgb(144, 144, 241);
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  border-style: none;
+  width: 100%;
+  border-style: groove;
+  margin-bottom: 20px;
+}
+
+.m-7{
+  font-size: 22px;
 }
