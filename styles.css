@@ -72,6 +72,7 @@ body {
 /* Header */
 
 header{
+  background: rgba(235, 230, 230, 0.5);
   background-image: url(img/wallpaper2you_419835.jpeg);
   background-position: center;
   background-repeat: no-repeat;
